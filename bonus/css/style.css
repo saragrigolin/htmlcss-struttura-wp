@@ -61,7 +61,7 @@ main {
     margin-bottom: 10px;
 }
 
-/* layout colonne */
+/* layout colonne prima riga*/
 div[class*="col"] {
     float: left;
 }
@@ -80,6 +80,7 @@ div[class*="col"] {
     margin: 0px 10px;
 }
 
+/* layout colonne seconda riga */
 .second-row > .first-col, 
 .second-row > .second-col,
 .second-row > .third-col, 
