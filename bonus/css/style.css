@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* layout */
+.container {
+    width: 80%;
+    margin: 10px auto;
+}
+
+header {
+    height: 80px;
+    background-color: #E579E6;
+}
+
+div.logo, div.menu {
+    height: 60px;
+    float: left;
+    background-color: pink;
+    margin: 10px;
+}
+
+div.logo {
+    width: 30%;
+}
+
+div.menu {
+    width: calc(70% - 40px);
+}
+
+/* layout jumbotron */
+.jumbotron  {
+    height: 400px;
+    background-color: #E1D67A;
+    margin: 10px 0;
+}
+
+main {
+    background-color: #0186FF;
+}
+
+.header {
+    height: 65px;
+    background-color: #ABCFE7;
+}
+
+.header, 
+.first-row {
+    margin-bottom: 10px;
+}
+
+/* layout colonne */
+div[class*="col"] {
+    float: left;
+}
+
+.first-row > .first-col, 
+.first-row > .third-col {
+    width: 20%;
+    background-color: #ABCFE7;
+    height: 500px;
+}
+
+.first-row > .second-col {
+    background-color: #ABCFE7;
+    height: 500px;
+    width: calc(60% - 20px);
+    margin: 0px 10px;
+}
+
+.second-row > .first-col, 
+.second-row > .second-col,
+.second-row > .third-col, 
+.second-row > .fourth-col {
+    width: calc(25% - 7.5px);
+    background-color: #a6eb9d;
+    height: 500px;
+    margin: 0px 0px 10px 10px;
+}
+
+.second-row > .first-col {
+    margin-left: 0px;
+}
+
+footer {
+    height: 40px;
+    background-color: #8B2CFD;
+    margin-top: 10px;
+}
